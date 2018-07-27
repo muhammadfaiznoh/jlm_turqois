@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: tbxml-android:@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/tbxml-android/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/build/intermediates/exploded-aar/tbxml-android/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

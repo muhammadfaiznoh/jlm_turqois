@@ -1,0 +1,50 @@
+<ion-view id="profile">
+
+    <ion-content>
+
+        <div class="text-center user-profile balanced-bg">
+               
+                <img id="profile-image" data-ng-src="data:image/jpeg;base64,{{up_image}}" ng-show="yesprofile">
+                <img id="profile-image" ng-src="img/thumb/no_profile_image.jpg" ng-show="noprofile">
+            </div>
+
+
+
+
+        <ion-list class="list animate-fade-slide-in-right">
+
+
+
+            </ion-item>
+
+            <label class="item item-input item-stacked-label" style="background: white;">
+                <span class="input-label balanced">Full Name</span>
+                <input id="input_name" type="text" placeholder="{{up_name}}" ng-model="update.name" />
+            </label>
+            <label class="item item-input item-stacked-label" style="background: white;">
+                <span class="input-label balanced">Email</span>
+                <input type="email" placeholder="{{up_email}}" ng-model="update.email">
+            </label>
+            <label class="item item-input item-stacked-label" style="background: white;">
+                <div style="100%">
+                    <span class="input-label balanced" style="float:left">Password</span>
+                    <button class="button icon ion-gear-b" style="float:right;margin-right:10px" ng-click="changePassword(update.email)"></button>
+                </div>
+                <input type="password" placeholder="{{up_password}}" ng-model="update.password">
+            </label>
+            <label class="item item-input item-stacked-label" style="background: white;">
+                <span class="input-label balanced">Phone Number</span>
+                <input type="text" placeholder="{{up_phone}}" ng-model="update.phone">
+            </label>
+        </ion-list>
+        <div class="row " style="padding-left: 20px; padding-right: 20px; margin-top:10%">
+            <button class="button button-block facebook-color light"style="width:100%; line-height:10px" ng-click="submit(update.name,update.email,update.phone)">
+                UPDATE PROFILE
+            </button>
+        </div>
+  
+
+
+
+    </ion-content>
+</ion-view>
